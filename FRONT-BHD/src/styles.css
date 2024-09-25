@@ -1,0 +1,151 @@
+/* You can add global styles to this file, and also import other style files */
+/* Estilo general */
+
+
+html,
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+header {
+  position: relative;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #54ad4d;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Logo a la derecha */
+.logo-right {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.logo-img {
+  height: 50px;
+}
+
+/* Logo centrado en el menú */
+.logo-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.logo-img-center {
+  height: 70px;
+}
+
+/* Estilo del menú */
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.menu {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  margin: 0 20px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.menu a:hover {
+  color: #ddd; /* Verde estilo Banco BHD */
+  border-bottom: 2px solid #54ad4d;
+}
+
+/* Estilo para submenú */
+.submenu {
+  position: relative;
+}
+
+.submenu-items {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  top: 100%;
+  left: 0;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.submenu-items li a {
+  color: white;
+  padding: 10px;
+  display: block;
+  width: 150px;
+  text-decoration: none;
+}
+
+.submenu-items li a:hover {
+  background-color: #54ad4d;
+}
+
+.submenu:hover .submenu-items {
+  display: block;
+}
+
+/* Estilo adicional para el contenido */
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+
+
+.btn-custom {
+  background-color: #4CAF50; /* Color de fondo */
+  color: white;              /* Color del texto */
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.btn-custom:hover {
+  background-color: #45a049; /* Cambio de color al pasar el mouse */
+}
+
+
+
+
+  
+  .title {
+  padding: 0px;
+  background-color: #666;
+  text-align: center;
+  color: white;
+  }
+  
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

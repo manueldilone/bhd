@@ -1,0 +1,53 @@
+CREATE TABLE Cursos (
+    IdCurso INT IDENTITY PRIMARY KEY,
+    Descripcion VARCHAR(100)
+);
+
+CREATE TABLE Estudiantes (
+    IdEstudiante INT IDENTITY PRIMARY KEY,
+    Nombre VARCHAR(60),
+    Apellido VARCHAR(60),
+    Edad INT,
+    FechaNacimiento DATE,
+    IdCurso INT FOREIGN KEY REFERENCES Cursos(IdCurso),
+    Direccion VARCHAR(255)
+);
+
+
+
+-- Poblar la tabla Cursos
+INSERT INTO bhd.dbo.Cursos (Descripcion) VALUES ('Matemáticas');
+GO
+
+INSERT INTO bhd.dbo.Cursos (Descripcion) VALUES ('Ciencias');
+GO
+
+INSERT INTO bhd.dbo.Cursos (Descripcion) VALUES ('Historia');
+GO
+
+INSERT INTO bhd.dbo.Cursos (Descripcion) VALUES ('Lengua Española');
+GO
+
+INSERT INTO bhd.dbo.Cursos (Descripcion) VALUES ('Educación Física');
+GO
+
+-- Poblar la tabla Estudiantes
+INSERT INTO bhd.dbo.Estudiantes (Nombre, Apellido, Edad, FechaNacimiento, IdCurso, Direccion) 
+VALUES ('Juan', 'Pérez', 15, '2009-05-12', 1, 'Calle Principal 123');
+GO
+
+INSERT INTO bhd.dbo.Estudiantes (Nombre, Apellido, Edad, FechaNacimiento, IdCurso, Direccion) 
+VALUES ('María', 'García', 16, '2008-07-22', 2, 'Av. Central 456');
+GO
+
+INSERT INTO bhd.dbo.Estudiantes (Nombre, Apellido, Edad, FechaNacimiento, IdCurso, Direccion) 
+VALUES ('Carlos', 'Rodríguez', 14, '2010-03-18', 3, 'Calle Norte 789');
+GO
+
+INSERT INTO bhd.dbo.Estudiantes (Nombre, Apellido, Edad, FechaNacimiento, IdCurso, Direccion) 
+VALUES ('Ana', 'Martínez', 15, '2009-11-30', 4, 'Barrio Sur 101');
+GO
+
+INSERT INTO bhd.dbo.Estudiantes (Nombre, Apellido, Edad, FechaNacimiento, IdCurso, Direccion) 
+VALUES ('Pedro', 'López', 17, '2007-09-05', 5, 'Av. Libertad 202');
+GO

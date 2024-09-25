@@ -1,0 +1,23 @@
+<div class="title">
+    <h1>Ver Estudiante</h1>
+</div>
+<!-- <div *ngIf="mascota$ | async as mascota" class="container"> -->
+<app-spinner *ngIf="loading"></app-spinner>
+<div *ngIf="Estudiante != null" class="container">
+    <mat-card class="card">
+        <mat-card-title>{{ Estudiante.nombre }}</mat-card-title>
+        <mat-card-content>
+            <p><strong>idEstudiante:</strong> {{ Estudiante.idEstudiante }} </p>
+            <p><strong>nombre:</strong> {{ Estudiante.nombre }} </p>
+            <p><strong>apellido:</strong> {{ Estudiante.apellido }} Kgs </p>
+            <p><strong>Edad:</strong> {{ Estudiante.edad }} Años </p>
+            <p><strong>fechaNacimiento:</strong> {{ Estudiante.fechaNacimiento }} </p>
+            <p><strong>idCurso:</strong> {{ Estudiante.idCurso }}  </p>
+            <p><strong>direccion:</strong> {{ Estudiante.direccion }}  </p>
+
+        </mat-card-content>
+        <mat-card-actions>
+            <button routerLink="/listEstudiante" mat-raised-button>Volver</button>
+        </mat-card-actions>
+    </mat-card>
+</div>

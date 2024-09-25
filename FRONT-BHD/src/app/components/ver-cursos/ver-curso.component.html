@@ -1,0 +1,18 @@
+<div class="title">
+    <h1>Ver curso</h1>
+</div>
+<!-- <div *ngIf="curso$ | async as curso" class="container"> -->
+<app-spinner *ngIf="loading"></app-spinner>
+<div *ngIf="curso != null" class="container">
+    <mat-card class="card">
+        <mat-card-title>{{ curso.idCurso }}</mat-card-title>
+        <mat-card-content>
+            <p><strong>idCurso:</strong> {{ curso.idCurso }} </p>
+            <p><strong>Descripcion:</strong> {{ curso.descripcion }} </p>
+        
+        </mat-card-content>
+        <mat-card-actions>
+            <button routerLink="/listCursos" mat-raised-button>Volver</button>
+        </mat-card-actions>
+    </mat-card>
+</div>

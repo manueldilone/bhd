@@ -1,0 +1,41 @@
+<header>
+  <!-- Logo a la derecha -->
+  <div class="logo-left">
+    <img src="https://static.bhd.com.do/bhd_1_35fc248886_c7474096c5.png" alt="Logo Right" class="logo-img">
+  </div>
+  
+  <!-- Menú de navegación con logo centrado -->
+  <nav class="navbar">
+    <ul class="menu">
+      <li><a href="/home"       >Inicio</a></li>
+      <li class="submenu">
+        <a >Estudiantes</a>
+        <ul class="submenu-items">
+          <li><a href="/listEstudiante">Ver Listado</a></li>
+          <li><a href="/agregarEstudiante">Agregar</a></li>
+        </ul>
+      </li>
+
+      <li class="submenu">
+        <a >Crusos</a>
+        <ul class="submenu-items">
+          <li><a href="/listCursos">Ver Listado</a></li>
+          <li><a href="/agregaCursos">Agregar</a></li>
+        </ul>
+      </li>
+      
+
+      
+      
+    </ul>
+   
+    <ul class="menu">
+      <li><a href="/about"      >Acerca de</a></li>
+      <li><a href="/contact"    >Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+<!-- Contenido de la página -->
+<div class="container mt-4">
+  <router-outlet></router-outlet>
+</div>
